@@ -12,7 +12,7 @@ export default function TodosList({todos, setTodos}){
     const todosItems = todos.map(todo => {
         return (
             <tr className={styles.tr} key={todo.id}>
-                <td className={styles.td}>{todo.id}</td>
+                <td className={styles.td}>{todo.id + 1}</td>
                 <td className={styles.td}>{todo.task}</td>
                 <td className={styles.td}>{todo.date}</td>
                 <td className={styles.td} onClick={()=>deleteTask(todo.id)}>
@@ -23,6 +23,7 @@ export default function TodosList({todos, setTodos}){
     })
     return(
         <table className={styles.table}>
+            <tbody>
             <tr className={styles.tr}>
                 <th className={styles.th}>ID</th>
                 <th className={styles.th}>Task</th>
@@ -30,6 +31,7 @@ export default function TodosList({todos, setTodos}){
                 <th className={styles.th}>Action</th>
             </tr>
             {todosItems}
+            </tbody>
         </table>
     )
 }

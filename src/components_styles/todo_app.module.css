@@ -1,0 +1,18 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    max-width: var(--max-page-width);
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 40px;
+  }
+  
+  .title{
+    font-size: 48px;
+    font-weight: 600;
+    color: var(--black);
+  }

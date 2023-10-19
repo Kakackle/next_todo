@@ -7,8 +7,9 @@ export default function TodoInput({todos, setTodos}){
 
     const addTask = () => {
         let todosNew = todos.slice()
+        let newId = todosNew.slice(-1)[0] ? todosNew.slice(-1)[0].id + 1 : 0;
         let newTask = {
-            id: todosNew.length,
+            id: newId,
             task: taskText,
             date: new Date().toUTCString(),
             action: "delete?"

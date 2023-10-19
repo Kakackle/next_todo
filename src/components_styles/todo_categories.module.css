@@ -1,0 +1,24 @@
+.main{
+    display: flex;
+    max-width: var(--max-page-width);
+    width: 100%;
+}
+
+.side{
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    border-right: 2px solid var(--blue-light);
+    /* position: sticky; */
+}
+
+.cat{
+    padding: 10px;
+    border-bottom: 1px solid var(--blue-dark);
+}
+
+.cat:hover{
+    cursor: pointer;
+    text-decoration: underline;
+    filter: brightness(0.75);
+}
