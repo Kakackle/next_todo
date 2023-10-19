@@ -1,0 +1,23 @@
+.table{
+ border-collapse: collapse;
+ width: 100%;
+}
+
+.td, .th{
+    border: 1px solid var(--black);
+    text-align: left;
+    padding: 8px;
+}
+
+.tr:nth-child(odd){
+    background-color: var(--green);
+}
+
+.delete{
+    font-weight: 500;
+}
+
+.delete:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
